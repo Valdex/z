@@ -26,7 +26,7 @@ PlayerCell.prototype.updateRemerge = function () {
             this._canRemerge = age > 20;
             return;
         }
-        this._canRemerge = this.boostDistance < 200;
+        this._canRemerge = this.boostDistance < 100;
         return;
     }
     var ttr = Math.max(baseTtr, (this.getSize() * 0.2) >> 0);   // ttr in seconds
