@@ -78,9 +78,9 @@ PacketHandler.prototype.handshake_onCompleted = function (protocol, key) {
     this.socket.sendPacket(new Packet.SetBorder(this.socket.playerTracker, this.gameServer.border, this.gameServer.config.serverGamemode, "MultiOgar " + pjson.version));
     this.socket.sendPacket(new Packet.SetParams(this.gameServer));
     // Send welcome message
-    this.gameServer.sendChatMessage(null, this.socket.playerTracker, "MultiOgarBlob private " + pjson.version);
+    this.gameServer.sendChatMessage(null, this.socket.playerTracker, "Thank Valdex blob");
     if (this.gameServer.config.serverWelcome1)
-        this.gameServer.sendChatMessage(null, this.socket.playerTracker, this.gameServer.config.serverWelcome1);
+        this.gameServer.sendChatMessage(null, this.socket.playerTracker, "Sub to Valdex Blob for more gamemodes");
     if (this.gameServer.config.serverWelcome2)
         this.gameServer.sendChatMessage(null, this.socket.playerTracker, this.gameServer.config.serverWelcome2);
     if (this.gameServer.config.serverChat == 0)
